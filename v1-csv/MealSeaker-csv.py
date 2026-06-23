@@ -16,4 +16,4 @@ if meal:
 elif meal == False:
     print(f"{name} is not a meal seeker.")
 else:
-    print(f"{name} has a special case for meals.")
+    print(f"{name} has a special case for meal collection.")
