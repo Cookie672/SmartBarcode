@@ -1,8 +1,10 @@
 from pathlib import Path
 import pandas as pd
+import threading
 
 
 CSV_PATH = Path(__file__).with_name("DataCSV.csv")
+csv_lock = threading.Lock()
 
 def fetch(searchcol: str, searchval, returncol: str, csvpath: str = CSV_PATH):
     if not CSV_PATH.exists():
